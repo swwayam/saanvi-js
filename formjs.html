@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>form</title>
+</head>
+   <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    h1{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    body{
+        background-color: rgb(44, 41, 41);
+    }
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(44, 41, 41);
+        margin-top: 100px;
+      }
+      label{
+        color: white;
+      }
+      .submitbutton{
+        background-color: rgb(186, 186, 242);
+        height: 35px;
+        width: 205px;
+        margin: 10px;
+      }
+      input{
+        background-color:  rgb(44, 41, 41);
+        border: 1px solid white;
+        height: 30px;
+        width: 200px;
+        margin: 10px;
+        border-radius: 5px;
+        color: white;
+      }
+      .passwordtypebox{
+        display: inline;
+      }
+      .password{
+        display: inline;
+      }
+      .passwordbutton{
+        padding: 5px;
+      }
+      #head{
+        color: white;
+        padding: 20px;
+      }
+   </style>
+<body>
+    <div>
+        <h1 id="heading">Sign Up</h1>
+        <div id="head"></div>
+        <input type="text" id="name" placeholder=" Name">
+        <br>
+        <br>
+        <input type="text" id="email" placeholder=" Email">
+        <br>
+        <br>
+        <input type="text" id="phonenumber" placeholder=" Phone Number">
+        <br>
+        <br>
+            <input class="passwordtypebox" id="password" type="password" placeholder=" Password">
+            <button class="passwordbutton">Show Password</button>
+        <br>
+        <br>
+        <button onclick="submit()" class="submitbutton">Submit</button>
+    </div>
+    <script>
+        function submit(){
+            var name = document.getElementById("name")
+            var email = document.getElementById("email")
+            var phonenumber = document.getElementById("phonenumber")
+            var password = document.getElementById("password")
+            var batman = document.getElementById("head")
+            var superman = document.getElementById("heading")
+            superman.innerHTML = password.value
+            batman.innerHTML = email.value
+            alert("Your submission was successfull")
+        }
+    </script>
+</body>
+</html>

@@ -14,6 +14,7 @@ var userAge = prompt("Please enter your age"); // 10
 
 if(userAge < 18){
     alert("You are not elidigble");
-}else{
+}
+else{
     alert("You are eligible");
 }

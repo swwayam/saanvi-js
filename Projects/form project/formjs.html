@@ -28,7 +28,7 @@
         justify-content: center;
         align-items: center;
         background-color: rgb(44, 41, 41);
-        margin-top: 100px;
+        margin-top: 50px;
       }
       label{
         color: white;
@@ -38,6 +38,7 @@
         height: 35px;
         width: 205px;
         margin: 10px;
+        border-radius: 8px;
       }
       input{
         background-color:  rgb(44, 41, 41);
@@ -76,7 +77,9 @@
         <br>
         <br>
             <input class="passwordtypebox" id="password" type="password" placeholder=" Password">
-            <button class="passwordbutton">Show Password</button>
+            <button onclick="showPassword()" class="passwordbutton">Show Password</button>
+            <br>
+            <button onclick="hidePassword()" class="passwordbutton">Hide Password</button>
         <br>
         <br>
         <button onclick="submit()" class="submitbutton">Submit</button>
@@ -92,6 +95,18 @@
             superman.innerHTML = password.value
             batman.innerHTML = email.value
             alert("Your submission was successfull")
+            name.value =''
+            email.value =''
+            phonenumber.value =''
+            password.value =''
+        }
+        function showPassword(){
+          var password = document.getElementById("password")
+          password.type ='text'
+        }
+        function hidePassword(){
+          var password = document.getElementById("password")
+          password.type ='password'
         }
     </script>
 </body>

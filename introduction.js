@@ -5,6 +5,11 @@
 // True and False Boolean
 // Text is called string
 
+var age = 10 // Integer Datatype.
+var percent = 1.1 // Float Datatype.
+var name = "sanvi" // String Datatype
+var havePassed = false // Boolean Datatype.
+
 console.log("Hi sanvi"); // "" or '' string
 console.log(10 + 10); // integer
 console.log(10.1 + .2); // float

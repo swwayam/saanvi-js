@@ -7,7 +7,6 @@ subtraction(233,433)
 subtraction(400,609874738294)
 
 
-
 function division(num1,num2){
     console.log(num1/num2);
 }
@@ -31,3 +30,4 @@ function addition(num1,num2){
 
 addition(1,1)
 addition(2,3)
+

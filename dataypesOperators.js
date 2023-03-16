@@ -25,8 +25,42 @@
 /**
  * Arithmetic Operator  -> + , - , / , * , %
  * Comparision Operator -> < , > , <= , ==
+ * Logical Operator -> || (or) , && (and), ! (not)
  */
 
+// if the driver is above 18 and also know to drive
+
+var knowToDrive = false;
+var age = 17;
+
+/** && (and) in JS
+ * True   True  -> True
+ * False  True  -> False 
+ * True   False -> False
+ * False  False -> False
+ */
+
+// And is used when 2 or more conditions needs to be evaluated to true for code to run
+
+if (age > 18 && knowToDrive) {
+    alert("Accepted")
+}else{
+    alert("Rejected")
+}
+
+
+/** || (or) in JS 
+ * True   True  -> 
+ * False  True  ->
+ * True   False -> 
+ * False  False -> 
+ */
+
+if (age > 18 || knowToDrive) {
+    alert("Accepted")
+}else{
+    alert("Rejected")
+}
 
 
 var percent = 10

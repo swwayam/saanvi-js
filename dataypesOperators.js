@@ -43,9 +43,9 @@ var age = 17;
 // And is used when 2 or more conditions needs to be evaluated to true for code to run
 
 if (age > 18 && knowToDrive) {
-    alert("Accepted")
+    alert("and Accepted")
 }else{
-    alert("Rejected")
+    alert("and Rejected")
 }
 
 
@@ -57,9 +57,9 @@ if (age > 18 && knowToDrive) {
  */
 
 if (age > 18 || knowToDrive) {
-    alert("Accepted")
+    alert("or Accepted")
 }else{
-    alert("Rejected")
+    alert("or Rejected")
 }
 
 

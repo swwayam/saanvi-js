@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            background-color: rgb(63, 116, 231);
+            position: fixed;
+            height: 50px;
+            width: 100%;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        li{
+            color: white;
+            font-size: 30px;
+            height: 30px;
+            width: 100px;
+            padding: 0px 15px;
+            margin-top: -8px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+        #pro{
+            background-color: rgb(63, 116, 231);
+            width: 150px;
+            padding: 10px 12px;
+            display: none;
+        }
+        li:hover{
+            color: orange;
+        }
+        #prod:hover #pro{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>About Us</li>
+            <div id="prod">
+                <li>Services</li>
+                <div id="pro">
+                    <a href="#">Web Develepment</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">Graphic Design</a>
+                    <a href="#">Icon Design</a>
+                    <a href="#">Motion Graphics</a>
+                </div>
+            </div>
+            <li>Works</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -20,3 +20,7 @@ console.log(para[29]);
 
 // Getting the last character's index
 console.log(para.lastIndexOf("i"));
+
+// Making strings uppercase - Sanvi's
+
+// Making strings lowercase - Sanvi's

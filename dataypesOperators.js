@@ -24,7 +24,7 @@
 
 /**
  * Arithmetic Operator  -> + , - , / , * , %
- * Comparision Operator -> < , > , <= , ==
+ * Comparision Operator -> < , > , <= , == , !== , === 
  * Logical Operator -> || (or) , && (and), ! (not)
  */
 
@@ -43,9 +43,9 @@ var age = 17;
 // And is used when 2 or more conditions needs to be evaluated to true for code to run
 
 if (age > 18 && knowToDrive) {
-    alert("Accepted")
+  //  alert("Accepted")
 }else{
-    alert("Rejected")
+   // alert("Rejected")
 }
 
 
@@ -57,9 +57,9 @@ if (age > 18 && knowToDrive) {
  */
 
 if (age > 18 || knowToDrive) {
-    alert("Accepted")
+  //  alert("Accepted")
 }else{
-    alert("Rejected")
+   // alert("Rejected")
 }
 
 
@@ -81,3 +81,33 @@ if(percent > 80){
 // the empolyee scores between 70-80 will get promoted next year.
 // the employee scores exact 68 will not get promoted.
 // the employee scores less than 50 will get salary reduced
+
+
+
+/** ! (not) in JS 
+ * True  -> False
+ * False  -> True
+ */
+
+var contact = 10
+
+if(contact !== 10){
+    console.log(true);
+}
+
+var bool = true
+
+if(!bool){
+    alert("Hi sanvi")
+}
+
+
+// Difference between == and ===
+
+if(8 == "8"){
+    console.log(true);
+}
+
+if("8" === "8"){
+    console.log(true);
+}

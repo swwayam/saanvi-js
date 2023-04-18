@@ -23,4 +23,8 @@ console.log(para.lastIndexOf("i"));
 
 // Making strings uppercase - Sanvi's
 
+console.log(para.toUpperCase())
+
 // Making strings lowercase - Sanvi's
+
+console.log(para.toLowerCase())

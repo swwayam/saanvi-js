@@ -11,3 +11,16 @@ console.log(person[2]);
 let sports = ["basketball", "swimming", "tennis", "badminton", "biking"]
 
 console.log(sports[0])
+
+// Array Methods
+
+// .pop removes one element from the end of the array
+sports.pop()
+console.log(sports);
+
+// .push adds one element in the end of the array
+sports.push("Cricket")
+console.log(sports);
+
+
+// .shift , .unshift

@@ -23,4 +23,10 @@ sports.push("Cricket")
 console.log(sports);
 
 
-// .shift , .unshift
+// .shift removes element from the front of the array , adds and element given to the front of the array .unshift
+
+sports.shift()
+console.log(sports)
+
+sports.unshift("running")
+console.log(sports)

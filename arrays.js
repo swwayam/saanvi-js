@@ -30,3 +30,13 @@ console.log(sports)
 
 sports.unshift("running")
 console.log(sports)
+
+// [1,2,3,5]
+
+let newArr = [1,2,3,4,5] 
+newArr[1] = 20;
+console.log(newArr);
+
+// to take the length of the array you say 
+
+console.log(newArr.length);

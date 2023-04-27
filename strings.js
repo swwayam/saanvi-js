@@ -9,7 +9,7 @@ console.log(para[3]);
 console.log(para.length)
 
 // Accessing the last character
-console.log(para[para.length - 1]);
+console.log(para[59]);
 
 
 // Getting the index of specific character

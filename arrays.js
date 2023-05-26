@@ -40,3 +40,10 @@ console.log(newArr);
 // to take the length of the array you say 
 
 console.log(newArr.length);
+
+let fruits = ["strawberry", "bannana", "blueberries"]
+let food = ['pasta', 'pizza']
+// concat combines two or more arrays
+let something = fruits.concat(food)
+console.log(something)
+

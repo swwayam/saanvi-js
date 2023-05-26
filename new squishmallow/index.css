@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #ec994b;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  z-index: 100;
+  background-color: white;
+  width: 100vw;
+  position: fixed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text:hover {
+  color: rgb(23, 184, 242);
+}
+
+.text {
+  color: black;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 2.5;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 124rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: var(--primary);
+  padding: 2rem 0;
+}
+
+#tranding {
+  padding: 4rem 0;
+}
+
+@media (max-width:1440px) {
+  #tranding {
+    padding: 7rem 0;
+  }
+}
+
+#tranding .tranding-slider {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  #tranding .tranding-slider {
+    height: 45rem;
+  }
+}
+
+.tranding-slide {
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  .tranding-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: var(--white);
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: var(--white);
+}
+
+.food-rating {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rating ion-icon {
+  color: var(--primary);
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+.tranding-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+#shopping{
+  overflow-x: hidden;
+}
+.shoptext{
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+.shopimgs{
+  display: flex;
+  justify-content: space-between;
+}
+.shopimg{
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  height: 300px;
+  width: 300px;
+}
+.imgname{
+  margin-left: 30px;
+}
+.price{
+  margin-left: 30px;
+}
+.buy{
+  margin-left: 30px;
+  margin-top: 20px;
+  color: black;
+  cursor: pointer;
+}
+.buy:hover{
+  color: rgb(23, 184, 242);
+}
+#newsbg{
+  width: 95vw;
+  height: 70vh;
+  margin-left: 25px;
+  margin-top: 20px;
+  border-radius: 50px;
+  background-image: url("https://squishmallows.com/home/wp-content/uploads/2022/09/pink-color.png?id=267249");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+.newstext{
+  color: black;
+  margin-left: 500px;
+}
+.div1news{
+  width: 350px;
+  margin-top: 50px;
+  margin-right: 50px;
+  height: 60vh;
+  background-color: white;
+  border-radius: 50px;
+  align-items: center;
+}
+.imgnews{
+  width: 100%;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+video{
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(60%);
+}
+.info{
+  color: #797979;
+  margin-left: 20px;
+}
+.read{
+  margin-left: 20px;
+  border: none;
+  background-color: #22222400;
+  color: rgb(23, 184, 242);
+  font-size: 15px;
+}
+.read:hover{
+  color: black;
+  cursor: pointer;
+}
+.three{
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+}
+.head1{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#home{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+.homeinfo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quote{
+  color: white;
+  margin-top: 10px;
+}
+.hometext{
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+.contactinfo{
+  background-color: #24262b;
+  margin-top: 50px;
+  overflow-x: hidden;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.infoheading{
+  color: white;
+  margin-top: 30px;
+}
+.extrainfo{
+  color: white;
+  cursor: pointer;
+}
+.extrainfo:hover{
+  color: rgb(23, 184, 242);
+}
+.sectioninfo{
+  margin-right: 200px;
+  margin-left: 40px;
+}
+@media (max-width:450px){
+
+}
